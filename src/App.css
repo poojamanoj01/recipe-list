@@ -1,0 +1,136 @@
+/* In index.css or App.css */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.footer {
+  background-color: #f1be16; /* Keep the black theme */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center; /* Align icon with text */
+}
+
+.music-icon {
+  margin-right: 8px; /* Space between the icon and text */
+  font-size: 1.5rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Curved Input Box and Arrow Button */
+.contact-form {
+  display: flex;
+  align-items: center;
+}
+
+.email-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  margin-right: 10px;
+  border-radius: 10px; /* Curved input box */
+  border: 1px solid #555; /* Border for input */
+  background-color: #222; /* Black background */
+  color: white;
+}
+
+.arrow-btn {
+  background-color: #ffffff;
+
+  border: none;
+  color: rgb(18, 9, 9);
+  cursor: pointer;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 20%; /* Curved arrow button */
+}
+
+.arrow-btn:hover {
+  background-color: #0b82f9;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #0b82f9;
+}
+
+/* Footer Bottom - Copyright */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .email-input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
